@@ -27,5 +27,14 @@ public class AccountController {
             return null;
         }
     }
+    @GetMapping("/myAccount1")
+    public Accounts getAccountDetails() {
+        Accounts accounts = sccountService.getAccountDetails(23);
+        if (accounts != null ) {
+            return accounts;
+        }else {
+            return null;
+        }
+    }
 
 }

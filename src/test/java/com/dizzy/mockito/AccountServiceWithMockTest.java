@@ -22,6 +22,7 @@ public class AccountServiceWithMockTest {
 
 	@Test
 	public void test1() {
+		String name ="madhav Rao";
 		Accounts mockResponse = new Accounts();
 		mockResponse.setBranchAddress("hyd");
 		Mockito.when(accountsRepository.findByCustomerId(Mockito.anyInt())).thenReturn(mockResponse);
